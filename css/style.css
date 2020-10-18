@@ -450,6 +450,112 @@ hr {
 /*------------- Blog-Site -------------  */
 
 /*------------- Main-Site -------------  */
+
+/*------------- Footer-Site -------------  */
+
+.footer-container {
+  background: #0f0f0f;
+}
+
+.footer-container h2 {
+  color: #fff;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-container p {
+  color: #686666da;
+}
+
+.info-another {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding: 4rem 0;
+}
+
+.about-us {
+  width: 20%;
+}
+
+.input-group {
+  margin: 1rem auto;
+}
+
+.input-group input {
+  border: none;
+  padding: 0.5rem;
+  background-color: #000;
+}
+
+.input-group button {
+  background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  padding: 0.5rem 0.5rem;
+  border: none;
+}
+
+.instagram-img {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.instagram-img .img-ins {
+  margin-right: -0.9rem;
+  width: 30%;
+  margin-bottom: 0.3rem;
+}
+
+.img-ins img {
+  width: 4rem;
+}
+
+.follow-us {
+  margin-left: -5.5rem;
+}
+
+.follow-us p {
+  margin-bottom: 1.2rem;
+}
+.social {
+  display: flex;
+}
+
+.social-item {
+  margin: 0 0.5rem;
+  color: #fff;
+}
+
+.top-icon {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  top: 8rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  padding: 0.475rem 0.5rem 0;
+  background: #104f55;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.top-icon:hover {
+  background: #fff;
+}
+
+.copyright {
+  text-align: center;
+  padding-bottom: 1.2rem;
+  color: #686666da;
+  font-size: 1.1rem;
+}
+
+.copyright a {
+  color: #fff;
+}
+/*------------- Footer-Site -------------  */
+
 @media only screen and (max-width: 750px) {
   .nav,
   .nav-menu ul {
