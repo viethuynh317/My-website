@@ -13,9 +13,26 @@ const responsive = {
     }
 
 }
+
+const topIcon = document.querySelector('.top-icon');
+$(window).scroll(() => {
+  
+  if($(window).scrollTop() >= 500){
+    $('.top-icon').show();
+  }else {
+    $('.top-icon').hide();
+  }
+});
+
+topIcon.addEventListener('click', () => {
+  $('html, body').animate({
+    scrollTop: 0 
+  }, 2000);
+});
+
 $(document).ready(function(){
   $('.toggle-icons').click(() => {
-    $('.nav').toggleClass('toggle');
+    $('.nav-menu ul').toggleClass('nav-toggle');
   });
   
   $('.owl-carousel').owlCarousel({
@@ -28,3 +45,5 @@ $(document).ready(function(){
     responsive: responsive
 });
 });
+
+AOS.init();

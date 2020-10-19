@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Anton&family=Josefin+Sans&family=Lexend+Deca&family=Livvic&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -11,21 +12,22 @@
 .nav {
   display: flex;
   justify-content: space-between;
-  height: 0;
-  min-height: 10vh;
   overflow: hidden;
   transition: all 0.5s ease-in-out;
   padding: 0 2rem;
 }
 
 .nav-brand {
-  padding: 1.2rem 2rem;
+  padding: 1rem 2rem;
   font-size: 1.6rem;
 }
 
 .nav-brand a {
   color: #3f4954;
   font-weight: bold;
+  font-family: "Lexend Deca", sans-serif;
+  letter-spacing: 0.125rem;
+  font-size: 1.5rem;
 }
 
 .nav-menu {
@@ -39,7 +41,7 @@
 }
 
 .nav-menu ul li {
-  padding: 1.6rem 1rem;
+  padding: 1.5rem 1rem;
   font-size: 1.1rem;
 }
 
@@ -49,6 +51,7 @@
 
 .nav-menu ul li a {
   color: #3f4954;
+  font-family: "Abel", cursive;
 }
 
 .nav-menu ul li:hover a {
@@ -62,7 +65,7 @@
 }
 
 .nav-icons i {
-  padding: 0 0.2rem;
+  padding: 0 0.3rem;
   color: #3f4954;
 }
 
@@ -88,9 +91,6 @@
   padding: 1.5rem 0 0;
 }
 
-.toggle {
-  min-height: 25rem;
-}
 /* ------------- Header NavBar -------------  */
 /*------------- Main-Site -------------  */
 
@@ -112,11 +112,13 @@
 .site-background h1 {
   font-size: 2.5rem;
   margin-bottom: 2.3rem;
+  font-family: "Lexend Deca", sans-serif;
 }
 
 .site-background h3 {
   font-size: 1.5rem;
   margin-bottom: 0.3rem;
+  font-family: "Abel", cursive;
 }
 
 .explore-btn a {
@@ -125,6 +127,7 @@
   padding: 1rem 3rem;
   background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
   border-radius: 30px;
+  font-family: "Livvic", sans-serif;
 }
 
 .explore-btn:hover a {
@@ -157,7 +160,7 @@
 
 .item {
   width: 80%;
-  height: 65vh;
+  height: 68vh;
   text-align: center;
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
   background: transparent;
@@ -170,6 +173,7 @@
 .item h3 {
   font-size: 1.2rem;
   margin: 2.5rem 0 2rem;
+  font-family: "Abel", cursive;
 }
 
 .fashion-btn a {
@@ -178,6 +182,7 @@
   padding: 0.8rem 2.5rem;
   background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
   border-radius: 30px;
+  font-family: "Livvic", sans-serif;
 }
 
 .fashion-btn:hover a {
@@ -190,6 +195,7 @@
   display: block;
   font-size: 1.1rem;
   margin-top: 1.5rem;
+  font-family: "Abel", sans-serif;
 }
 
 .owl-nav .owl-prev .owl-nav-prev {
@@ -264,13 +270,13 @@
 }
 
 .info-img {
-  width: 45%;
+  width: 50%;
   display: flex;
   padding: 1.1rem 0.1rem;
   background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
   border-radius: 30px;
   position: absolute;
-  top: 62%;
+  top: 56.5%;
   left: 27%;
   justify-content: center;
 }
@@ -278,6 +284,7 @@
 .info-img span {
   display: block;
   margin: 0 0.5rem;
+  font-family: "Abel", cursive;
 }
 
 .content-post {
@@ -286,10 +293,14 @@
 .content-post h1 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  font-family: "Anton", sans-serif;
+  color: rgba(0, 0, 0, 0.75);
 }
 
 .content-post p {
   margin-bottom: 1.8rem;
+  font-family: "Lexend Deca", sans-serif;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .read-more a {
@@ -297,6 +308,7 @@
   background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
   color: #000;
   transition: all 0.3 ease-in-out;
+  font-family: "Livvic", sans-serif;
 }
 
 .read-more a:focus {
@@ -339,6 +351,7 @@ hr {
 .sub-post h1 {
   font-size: 1.5rem;
   margin-bottom: 2rem;
+  font-family: "Lexend Deca", sans-serif;
 }
 
 .category-item {
@@ -361,6 +374,7 @@ hr {
 
 .cate-item span {
   color: #3f4954;
+  font-family: "Livvic", sans-serif;
 }
 
 .litte-post {
@@ -373,12 +387,11 @@ hr {
 
 .popular-post {
   width: 90%;
-  margin-bottom: 10rem;
+  margin-bottom: 12rem;
 }
 
 .img-lpost {
-  margin-bottom: 2.5rem;
-
+  margin-bottom: 1.5rem;
   overflow: hidden;
 }
 
@@ -395,12 +408,19 @@ hr {
   position: absolute;
   padding: 0.3rem 0;
   background: #fff;
-  top: 58%;
+  top: 53%;
   left: 0;
 }
 
 .content-lpost span {
   margin-right: 0.6rem;
+  font-family: "Abel", sans-serif;
+}
+
+.title-lpost h3 {
+  font-family: "Anton", sans-serif;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 0.975rem;
 }
 
 .newsletter {
@@ -417,6 +437,8 @@ hr {
 .input input[type="email"] {
   margin-bottom: 1rem;
   padding: 0.8rem 0.5rem;
+  font-size: 1.025rem;
+  font-family: "Lexend Deca", sans-serif;
 }
 
 .input input[type="submit"] {
@@ -425,6 +447,8 @@ hr {
   padding-bottom: 1rem;
   background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
   cursor: pointer;
+  font-size: 1.025rem;
+  font-family: "Livvic", sans-serif;
 }
 .input input[type="submit"]:hover {
   background: linear-gradient(120deg, #5c94ee 0%, #a1c4fd 100%);
@@ -442,6 +466,7 @@ hr {
   margin: 0.5rem;
   border-radius: 20px;
   color: #000;
+  font-family: "Livvic", sans-serif;
 }
 
 .tags a:hover {
@@ -459,16 +484,18 @@ hr {
 
 .footer-container h2 {
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin-bottom: 1.5rem;
+  font-family: "Lexend Deca", sans-serif;
 }
 
 .footer-container p {
   color: #686666da;
+  font-family: "Lexend Deca", sans-serif;
 }
 
 .info-another {
-  width: 90%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -486,13 +513,15 @@ hr {
 
 .input-group input {
   border: none;
-  padding: 0.5rem;
+  padding: 0.5rem 0.75rem;
   background-color: #000;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.0125rem;
 }
 
 .input-group button {
   background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-  padding: 0.5rem 0.5rem;
+  padding: 0.5rem 0.75rem;
   border: none;
 }
 
@@ -528,16 +557,16 @@ hr {
 }
 
 .top-icon {
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  top: 8rem;
-  height: 2.5rem;
+  display: none;
+  bottom: 28rem;
+  right: 4rem;
+  height: 2.3rem;
   font-size: 1.5rem;
-  padding: 0.475rem 0.5rem 0;
+  padding: 0.4rem 0.5rem 0;
   background: #104f55;
   border-radius: 50%;
   cursor: pointer;
+  position: fixed;
 }
 
 .top-icon:hover {
@@ -548,55 +577,47 @@ hr {
   text-align: center;
   padding-bottom: 1.2rem;
   color: #686666da;
-  font-size: 1.1rem;
+  font-size: 1.075rem;
+}
+
+.copyright p {
+  font-family: "Josefin Sans", sans-serif;
+  color: #3f4954;
 }
 
 .copyright a {
   color: #fff;
+  font-family: "Josefin Sans", sans-serif;
 }
 /*------------- Footer-Site -------------  */
 
 @media only screen and (max-width: 750px) {
-  .nav,
-  .nav-menu ul {
-    flex-direction: column;
-  }
-
-  .nav {
-    justify-content: initial;
-  }
-
   .nav-menu {
-    width: 90%;
+    width: 100%;
   }
 
   .nav-menu ul {
-    position: relative;
-    top: 0.6rem;
-    width: 50%;
+    position: absolute;
+    top: 3.925rem;
+    width: 100%;
+    right: 0rem;
     align-items: center;
-    margin-left: auto;
     background: #eee;
+    display: none;
   }
 
   .nav-menu ul li {
-    padding: 0.7rem;
+    padding: 1.1rem;
     font-size: 1.1rem;
   }
 
-  .nav-social {
-    width: 90%;
+  .nav-toggle {
+    display: flex !important;
+    z-index: 999;
   }
 
   .nav-icons {
-    position: relative;
-    top: 0.4rem;
-    width: 50%;
-    justify-content: center;
-    margin-left: auto;
-    background: #eee;
-    z-index: 999;
-    padding: 0.5rem;
+    display: none;
   }
 
   .toggle-menu {
