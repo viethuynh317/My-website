@@ -47,6 +47,7 @@
 
 .nav-menu ul li:hover {
   background: #104f55;
+  cursor: pointer;
 }
 
 .nav-menu ul li a {
@@ -238,7 +239,7 @@
 /*------------- Blog-Site -------------  */
 
 .container {
-  margin: 0 5rem;
+  margin: 0 4.3rem !important;
 }
 
 .blog-site {
@@ -248,15 +249,18 @@
 
 .main-post {
   width: 100%;
-  padding: 0 1.5rem;
-  position: relative;
+  padding-left: 0;
+  padding-right: 1.5rem;
 }
 
 .posts {
+}
+
+.wrap-post {
   position: relative;
 }
 
-.posts > .img-post {
+.img-post {
   margin-bottom: 2.5rem;
   overflow: hidden;
 }
@@ -278,8 +282,8 @@
   background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
   border-radius: 30px;
   position: absolute;
-  bottom: 34%;
-  left: 30%;
+  bottom: -5% !important;
+  left: 25% !important;
   z-index: 999;
 }
 
@@ -593,7 +597,7 @@ hr {
 }
 /*------------- Footer-Site -------------  */
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 768px) {
   .nav-menu {
     width: 100%;
   }
@@ -646,25 +650,24 @@ hr {
   .info-another {
     flex-wrap: wrap;
   }
+
+  .container {
+    margin: 0 4rem !important;
+  }
+  .main-post {
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 1130px) {
   .info-img {
     border-radius: 0;
-    left: 0;
-    bottom: 42.25vh;
+    left: 0 !important;
+    bottom: 0 !important;
   }
 
   .content-lpost {
     display: none;
-  }
-}
-
-@media screen and (max-width: 911px) {
-  .info-img {
-    border-radius: 0;
-    left: 0;
-    bottom: 51.5vh;
   }
 }
 
@@ -693,6 +696,14 @@ hr {
   .top-icon {
     width: 2.4rem !important;
   }
+
+  .container {
+    margin: 0 4.5rem;
+  }
+
+  .main-post {
+    padding-left: 0;
+  }
 }
 
 @media screen and (max-width: 817px) {
@@ -710,46 +721,15 @@ hr {
   }
 }
 
-@media screen and (max-width: 797px) {
-  .info-img {
-    border-radius: 0;
-    left: 0;
-    bottom: 55vh;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  .info-img {
-    border-radius: 0;
-    left: 0;
-    bottom: 42vh;
-  }
-}
-
-@media screen and (max-width: 639px) {
-  .info-img {
-    border-radius: 0;
-    left: 0;
-    bottom: 44vh;
-  }
+@media screen and (max-width: 659px) {
   .img-ins > img {
     width: 5rem;
   }
 }
 
-@media screen and (max-width: 615px) {
-  .info-img {
-    border-radius: 0;
-    left: 0;
-    bottom: 51.5vh;
-  }
-}
-
-@media screen and (max-width: 535px) {
-  .info-img {
-    border-radius: 0;
-    left: 0;
-    bottom: 54.5vh;
+@media screen and (max-width: 560px) {
+  .container {
+    margin: 0 3rem !important;
   }
 
   .img-ins > img {

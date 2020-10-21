@@ -5,10 +5,10 @@ const responsive = {
     320: {
         items: 1
     },
-    560: {
+    561: {
         items: 2
     },
-    960: {
+    993: {
         items: 3
     }
 
