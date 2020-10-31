@@ -260,6 +260,7 @@
 }
 
 .img-post {
+  width: 100%;
   margin-bottom: 2.5rem;
   overflow: hidden;
 }
@@ -306,6 +307,7 @@
   margin-bottom: 1.8rem;
   font-family: "Lexend Deca", sans-serif;
   color: rgba(0, 0, 0, 0.5);
+  width: 100%;
 }
 
 .read-more a {
@@ -564,7 +566,7 @@ hr {
 .top-icon {
   display: none;
   bottom: 28rem;
-  right: 4rem;
+  right: 2rem;
   height: 2.3rem;
   font-size: 1.5rem;
   padding: 0.4rem 0.5rem 0;
@@ -572,6 +574,7 @@ hr {
   border-radius: 50%;
   cursor: pointer;
   position: fixed;
+  z-index: 999;
 }
 
 .top-icon:hover {
@@ -688,10 +691,6 @@ hr {
     padding: 0.5rem;
   }
 
-  .input-group button {
-    display: inline-block;
-  }
-
   .top-icon {
     width: 2.4rem !important;
   }
@@ -705,7 +704,7 @@ hr {
   }
 }
 
-@media screen and (max-width: 817px) {
+@media screen and (max-width: 768px) {
   .info-another {
     flex-direction: column;
   }
@@ -720,30 +719,60 @@ hr {
   }
 }
 
-@media screen and (max-width: 659px) {
-  .img-ins > img {
-    width: 5rem;
+@media screen and (max-width: 576px) {
+  .site-background h1 {
+    text-align: center;
   }
-}
 
-@media screen and (max-width: 560px) {
   .container {
     margin: 0 3rem !important;
+    padding: 1rem 0 4rem;
   }
 
   .img-ins > img {
     width: 4rem;
   }
-}
 
-@media screen and (max-width: 467px) {
-  .img-ins > img {
-    width: 3rem;
+  .blog-site {
+    grid-template-columns: 100%;
   }
-}
 
-@media screen and (max-width: 345px) {
+  .info-img {
+    display: none;
+  }
+
+  .info-another > div {
+    right: 0.5rem;
+  }
+
+  .tags {
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .tags a {
+    width: 7.5rem;
+    text-align: center;
+  }
+
+  .info-another div {
+    margin: 1rem auto;
+  }
+  .instagram-img .img-ins {
+    margin: 0;
+  }
   .img-ins > img {
-    width: 2rem;
+  }
+
+  .copyright p {
+    line-height: 2.5rem;
+  }
+
+  .input input[type="email"] {
+    width: 110%;
+  }
+
+  .input input[type="submit"] {
+    width: 110%;
   }
 }
