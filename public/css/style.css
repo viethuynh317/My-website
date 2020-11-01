@@ -18,7 +18,7 @@
 }
 
 .nav-brand {
-  padding: 1rem 2rem;
+  padding: 1rem 2rem 1rem 1rem;
   font-size: 1.6rem;
 }
 
@@ -90,6 +90,7 @@
   align-items: center;
   justify-content: flex-end;
   padding: 1.3rem 0 0;
+  flex-wrap: wrap;
 }
 
 /* ------------- Header NavBar -------------  */
@@ -218,8 +219,13 @@
 
 .owl-theme .owl-nav [class*="owl-"] {
   outline: none;
-  background: #eee;
+  background: transparent;
   color: #999;
+  border: 1px solid #999;
+}
+
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background-color: #3f4954;
 }
 
 .owl-dots {
@@ -389,11 +395,11 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 0 4rem 2rem;
+  margin: 0 0 4rem 0.5rem;
 }
 
 .popular-post {
-  width: 90%;
+  width: 100%;
   margin-bottom: 12rem;
 }
 
@@ -436,9 +442,10 @@ hr {
 
 .input {
   display: flex;
-  margin-left: 2rem;
+
   flex-direction: column;
-  width: 75%;
+  width: 95%;
+  margin: 0 auto;
 }
 
 .input input[type="email"] {
@@ -463,7 +470,7 @@ hr {
 
 .tags {
   display: flex;
-  margin: 1rem;
+
   flex-wrap: wrap;
 }
 
@@ -474,6 +481,8 @@ hr {
   border-radius: 20px;
   color: #000;
   font-family: "Livvic", sans-serif;
+  width: 7rem;
+  text-align: center;
 }
 
 .tags a:hover {
@@ -566,7 +575,7 @@ hr {
 .top-icon {
   display: none;
   bottom: 28rem;
-  right: 2rem;
+  right: 1rem;
   height: 2.3rem;
   font-size: 1.5rem;
   padding: 0.4rem 0.5rem 0;
@@ -601,6 +610,18 @@ hr {
 
 @media only screen and (max-width: 768px) {
   .nav-menu {
+    width: 100%;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+
+    align-items: flex-start !important;
+  }
+
+  .nav-menu ul li {
+    margin-left: 2rem;
+
     width: 100%;
   }
 
@@ -682,6 +703,11 @@ hr {
     width: 45%;
     margin: 2rem auto;
   }
+
+  .owl-dots {
+    left: 47.5%;
+  }
+
   .input-group {
     margin: 0;
     display: flex;
@@ -705,17 +731,24 @@ hr {
 }
 
 @media screen and (max-width: 768px) {
+  .nav-toggle {
+    width: 100vw;
+  }
+
   .info-another {
     flex-direction: column;
   }
 
   .info-another > div {
-    margin: 2rem 3rem;
     width: 80%;
   }
 
   .img-ins > img {
     width: 6.3rem;
+  }
+
+  .nav-menu ul li {
+    width: calc(100% - 2rem);
   }
 }
 
@@ -725,14 +758,43 @@ hr {
   }
 
   .container {
-    margin: 0 3rem !important;
+    margin: 0 1.5rem !important;
     padding: 1rem 0 4rem;
+  }
+
+  .owl-carousel.owl-loaded {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .owl-carousel .owl-item img {
+    height: 14rem;
+  }
+
+  .img-post {
+    margin-bottom: 2rem;
   }
 
   .img-ins > img {
     width: 4rem;
   }
 
+  .item {
+    width: 95%;
+  }
+
+  .category {
+    margin-bottom: 5rem;
+  }
+  .popular-post {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+
+  .litte-post {
+    margin-left: 0;
+    text-align: center;
+  }
   .blog-site {
     grid-template-columns: 100%;
   }
@@ -751,7 +813,7 @@ hr {
   }
 
   .tags a {
-    width: 7.5rem;
+    width: 9rem;
     text-align: center;
   }
 
@@ -768,11 +830,19 @@ hr {
     line-height: 2.5rem;
   }
 
-  .input input[type="email"] {
-    width: 110%;
+  .input-group input {
+    padding: 0.5rem;
+  }
+
+  .input-group input[type="email"] {
+    width: 100%;
   }
 
   .input input[type="submit"] {
-    width: 110%;
+    width: 100%;
+  }
+
+  .owl-dots {
+    left: 37.5%;
   }
 }
