@@ -151,6 +151,7 @@
   background: url(../assets/Abract01.png) no-repeat;
   background-position: right;
   background-size: 65%;
+  margin-bottom: 3rem;
 }
 
 .slide-item {
@@ -161,7 +162,7 @@
 
 .item {
   width: 80%;
-  height: 68vh;
+  height: 70vh;
   text-align: center;
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
   background: transparent;
